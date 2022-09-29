@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { IUserResponse } from "../App";
+import { baseUrl } from "../utils/baseUrl";
 
 interface IProps {
   currentUserManager: [
@@ -11,7 +12,6 @@ interface IProps {
 
 export default function SignIn({ currentUserManager }: IProps): JSX.Element {
   const setCurrentUser = currentUserManager[1];
-  const baseUrl = "http://localhost:4000";
   const [userList, setUserList] = useState<IUserResponse[]>([]);
 
   useEffect(() => {
