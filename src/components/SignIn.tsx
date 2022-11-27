@@ -1,9 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { IUserResponse } from "../../../utils/types";
-import { baseUrl } from "../../../utils/baseUrl";
-import getStudylistFromServer from "../../../utils/getStudylistFromServer";
-import "./SignIn.scss";
+import { IUserResponse } from "../utils/types";
+import { baseUrl } from "../utils/baseUrl";
+import getStudylistFromServer from "../utils/getStudylistFromServer";
 
 interface IProps {
   currentUserManager: [
@@ -17,8 +16,6 @@ export default function SignIn({
   currentUserManager,
   setUserStudylist,
 }: IProps): JSX.Element {
-  //TODO: If not signed in then show as sign in button
-  //TODO: If signed in show as avatar
   const setCurrentUser = currentUserManager[1];
   const [userList, setUserList] = useState<IUserResponse[]>([]);
 
