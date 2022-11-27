@@ -1,0 +1,86 @@
+Button {
+  margin: 2px 5px;
+}
+
+#filter_area {
+  margin: 15px 10px 5px 30px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-bar {
+  width: min(600px, 60vw);
+  margin: 2px 2px;
+  padding: 2px 4px;
+  border: 1px solid rgb(153, 161, 165);
+  border-radius: 2px;
+}
+
+#sigin_area {
+  margin: 0px 10px 5px 30px;
+}
+
+#select-user {
+  width: 200px;
+  margin-right: 15px;
+  height: 30px;
+}
+
+#create_new_resource_button {
+  /* position: absolute;
+    right: max(20px, 5vw);
+    top : 150px; */
+  margin-left: 30px;
+}
+
+.resource_modal {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resource_modal li {
+  margin: 3px;
+}
+
+.resource_modal label {
+  padding-right: 5px;
+}
+
+.tag {
+  margin: 5px 2px;
+  border-radius: 4px;
+  background-color: rgb(240, 249, 255);
+  border: 1px solid rgb(207, 217, 223);
+}
+
+.selected_tag {
+  border: 1px solid black;
+}
+
+#resource_list {
+  margin: 40px 10px;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.resource {
+  box-shadow: -5px 0px 5px rgb(0 0 0 / 0.2);
+}
+
+.likes_area {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.likes {
+  margin: 10px 10px 0px 0px;
+}
+
+.likes p {
+  margin: 0px;
+}
