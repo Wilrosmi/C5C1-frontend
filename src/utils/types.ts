@@ -39,3 +39,9 @@ export interface IUserResponse {
   name: string;
   is_faculty: boolean;
 }
+
+export interface MenuOption {
+  name: string;
+  route: string;
+  loggedIn: boolean;
+}

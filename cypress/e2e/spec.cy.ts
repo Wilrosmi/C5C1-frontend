@@ -31,11 +31,11 @@ describe('Visits site and does not find create resource button when not logged i
 describe('Visits site, signs in as Beill, and clicks create resource button', () => {
   it('finds the login dropdown and selects Beill', () => {
     cy.visit(frontEndUrl);
-    cy.get('#search-bar').get('#select-user').select('Beill Nogie');
+    cy.get('#search_bar').get('#select-user').select('Beill Nogie');
   });
   it('logs in as Beill and clicks create resource button, which opens creat resource modal', () => {
     cy.visit(frontEndUrl);
-    cy.get('#search-bar').get('#select-user').select('Beill Nogie');
+    cy.get('#search_bar').get('#select-user').select('Beill Nogie');
     cy.contains('Create Resource').click();
     cy.contains('Add new tag');
   })
@@ -44,7 +44,7 @@ describe('Visits site, signs in as Beill, and clicks create resource button', ()
 describe('Visits site, signs in as Beill, and creates a new resource', () => {
   it('logs in as Beill and clicks create resource button, which opens creat resource modal', () => {
     cy.visit(frontEndUrl);
-    cy.get('#search-bar').get('#select-user').select('Beill Nogie');
+    cy.get('#search_bar').get('#select-user').select('Beill Nogie');
     cy.contains('Create Resource').click();
     cy.get('#resource-name-input').click().type('fake title');
     cy.get('#author-name-input').click().type('fake author');

@@ -1,0 +1,50 @@
+.form_element {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    font-weight: 500;
+    font-size: 1em;
+    color: #4f6367;
+    margin-bottom: 12px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 1em;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+    font-family: inherit;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #fe5f55;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+#tags_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .form_element {
+    width: 70%;
+    margin-right: 16px;
+  }
+
+  button {
+    margin-top: 24px;
+    width: 30%;
+    padding: 12px 24px;
+  }
+}

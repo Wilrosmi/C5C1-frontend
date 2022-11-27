@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "../../utils/baseUrl";
 
 interface ITagsCloudProps {
   searchTags: string[];
@@ -21,6 +21,7 @@ export function TagsCloud({
         );
       } catch (error) {
         console.error(error);
+        //TODO: Improve error alerts
         alert("Something went wrong");
       }
     };
@@ -34,7 +35,7 @@ export function TagsCloud({
 
   return (
     <>
-      <div className="tag-cloud filter_tags">
+      <div className="tag_cloud filter_tags">
         {allTags
           .filter((tag) => !searchTags.includes(tag))
           .map((tag, i) => (
@@ -42,12 +43,13 @@ export function TagsCloud({
               className="tag"
               key={i}
               onClick={() => handleAddToSearchTags(tag)}
+              // TODO: Use selectRandElement but prevent colour change on rerender
             >
               {tag}
             </button>
           ))}
       </div>
-      <div className="tag-cloud">
+      <div className="tag_cloud">
         {searchTags.map((tag, i) => (
           <button
             className="tag selected_tag"

@@ -1,0 +1,43 @@
+#navigation_bar {
+  position: sticky;
+  top: 0px;
+  background-color: #eef5db;
+  z-index: 254;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -24px;
+  padding: 20px;
+  height: 5em;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    padding-right: 15px;
+  }
+
+  button {
+    width: 9em;
+  }
+}
+
+#home_name {
+  position: sticky;
+  top: 0px;
+  width: fit-content;
+  z-index: 255;
+
+  padding-top: 20px;
+  margin-top: 24vh;
+}
+
+.site_name {
+  width: fit-content;
+  font-size: 1.5em;
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  z-index: 255;
+}
